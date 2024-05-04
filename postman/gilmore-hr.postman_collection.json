@@ -1,0 +1,214 @@
+{
+  "info": {
+    "_postman_id": "fa2e4f71-c8b6-4fb0-be7c-2786e1c8497c",
+    "name": "gilmore-hr",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "752706"
+  },
+  "item": [
+    {
+      "name": "create-employee",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"firstName\": \"John Andrew\",\n    \"surname\": \"Smith Taylor\",\n    \"amount\": 25\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://your-rest-id.execute-api.your-region.amazonaws.com/prod/v1/employees/",
+          "protocol": "https",
+          "host": [
+            "your-rest-id",
+            "execute-api",
+            "your-region",
+            "amazonaws",
+            "com"
+          ],
+          "path": ["prod", "v1", "employees", ""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get-employee",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://your-rest-id.execute-api.your-region.amazonaws.com/prod/v1/employees/a6c6c55c-056c-4e00-b2af-10aede540213",
+          "protocol": "https",
+          "host": [
+            "your-rest-id",
+            "execute-api",
+            "your-region",
+            "amazonaws",
+            "com"
+          ],
+          "path": [
+            "prod",
+            "v1",
+            "employees",
+            "a6c6c55c-056c-4e00-b2af-10aede540213"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update-employee",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"firstName\": \"Paul\",\n    \"surname\": \"Gilly\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://your-rest-id.execute-api.your-region.amazonaws.com/prod/v1/employees/a6c6c55c-056c-4e00-b2af-10aede540213/",
+          "protocol": "https",
+          "host": [
+            "your-rest-id",
+            "execute-api",
+            "your-region",
+            "amazonaws",
+            "com"
+          ],
+          "path": [
+            "prod",
+            "v1",
+            "employees",
+            "a6c6c55c-056c-4e00-b2af-10aede540213",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete-employee",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://your-rest-id.execute-api.your-region.amazonaws.com/prod/v1/employees/8349a5f5-033b-43df-9406-615e971a76bd",
+          "protocol": "https",
+          "host": [
+            "your-rest-id",
+            "execute-api",
+            "your-region",
+            "amazonaws",
+            "com"
+          ],
+          "path": [
+            "prod",
+            "v1",
+            "employees",
+            "8349a5f5-033b-43df-9406-615e971a76bd"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "leave-request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"type\": \"REQUEST_LEAVE\",\n    \"amount\": 5\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://your-rest-id.execute-api.your-region.amazonaws.com/prod/v1/employees/8349a5f5-033b-43df-9406-615e971a76bd/requests",
+          "protocol": "https",
+          "host": [
+            "your-rest-id",
+            "execute-api",
+            "your-region",
+            "amazonaws",
+            "com"
+          ],
+          "path": [
+            "prod",
+            "v1",
+            "employees",
+            "8349a5f5-033b-43df-9406-615e971a76bd",
+            "requests"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "cancel-leave-request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"type\": \"CANCEL_LEAVE\",\n    \"amount\": 8\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://your-rest-id.execute-api.your-region.amazonaws.com/prod/v1/employees/8349a5f5-033b-43df-9406-615e971a76bd/requests",
+          "protocol": "https",
+          "host": [
+            "your-rest-id",
+            "execute-api",
+            "your-region",
+            "amazonaws",
+            "com"
+          ],
+          "path": [
+            "prod",
+            "v1",
+            "employees",
+            "8349a5f5-033b-43df-9406-615e971a76bd",
+            "requests"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "query-employees",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://your-rest-id.execute-api.your-region.amazonaws.com/prod/v1/employees/",
+          "protocol": "https",
+          "host": [
+            "your-rest-id",
+            "execute-api",
+            "your-region",
+            "amazonaws",
+            "com"
+          ],
+          "path": ["prod", "v1", "employees", ""]
+        }
+      },
+      "response": []
+    }
+  ]
+}
